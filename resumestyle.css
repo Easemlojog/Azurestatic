@@ -1,0 +1,136 @@
+body{
+	
+     background-image: url("prof2.jpg")
+}
+/*  Body is the entire design for my webpage    */
+
+
+h1{
+	
+	font-family:verdana;
+	
+	
+}
+
+h2{
+	
+	font-family:verdana;
+
+}
+
+p{
+	
+	font-family:verdana;
+
+
+}
+
+p1{
+	
+	font-family:verdana;
+
+}
+
+thead{
+	
+	font-family:verdana;
+
+}
+
+
+
+/* The  heading font color should always match the companys' logo */
+
+
+/*    */
+
+hr{
+	border-style: none;
+	border-top-style: dotted;
+	border-color: white;
+	border-width: 5px;
+	width: 10%;
+}
+
+
+table{
+	border-style: none;
+}
+
+td {
+  width: 250px;
+  padding: 2px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+
+.photo span{
+    bottom: 0;
+    font-size: 60px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    gap: 17px;
+}
+
+.content a{
+    display: block;
+    width: 40%;
+    background:  rgb(253, 182, 16);
+    text-align: center;
+    color:#111;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:10px 10px rgba(0, 0, 0, .4);
+}
+
+.content a::before{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+.content .github::before {
+    content: "Github";
+    top: 0;
+    right: -100%;
+    background: #010101;
+}
+
+.content .github:hover:before {
+    right: 0;
+}
+
+.content .linkedin::before {
+    content: "LinkedIn";
+    left: 0;
+    bottom: -100%;
+    background: #3334a1;
+}
+
+.content .linkedin:hover:before {
+    bottom: 0;
+}
